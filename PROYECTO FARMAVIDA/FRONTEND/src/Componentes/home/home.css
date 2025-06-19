@@ -1,0 +1,302 @@
+
+
+.box-area {
+    width: 850px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.right-box {
+    padding: 15px 15px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+    background: #23539E;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.boton {
+    width: 165px;
+    align-self: center;
+    margin: 0 10px 25px 10px;
+    border: none;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+.img-fluid1,
+.img-fluid2 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.mensaje {
+    margin: 35px auto;
+    text-align: center;
+    width: 90%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.width-style1 {
+    width: 250px;
+}
+
+.width-style2 {
+    width: 20px;
+}
+
+.head {
+    background-color: #f7f6f6;
+    width: 100%;
+}
+
+.mlat {
+    display: flex;
+    background-color: #23539e;
+    width: auto !important;
+    height: 100vh;
+    color: white;
+}
+
+.bienvenida {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.list-unstyled {
+    align-self: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-welcome-info {
+    margin-top: 50px;
+    text-align: center;
+    width: auto;
+}
+
+.welcome-username {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #23539E;
+}
+
+.welcome-date {
+    font-size: 1.6rem;
+    color: #555;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formadm {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-overlay h1 {
+    width: 50%;
+    margin: 0;
+    font-weight: bold;
+    padding: 80px;
+}
+
+.mlat h2 {
+    font-size: medium;
+}
+
+.rol {
+    display: flex;
+    justify-content: end;
+}
+
+.adm {
+    background-color: rgba(255, 255, 25, 0.831);
+    align-content: center;
+}
+
+.emp {
+    align-self: center;
+}
+
+@media (max-width: 992px) {
+    .box-area {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .right-box {
+        padding: 10px;
+    }
+
+    .btns {
+        justify-content: center;
+    }
+
+    .boton {
+        width: 150px;
+        margin: 10px 5px;
+    }
+
+    .mensaje {
+        margin: 20px auto;
+        font-size: 14px;
+    }
+
+    .logos {
+        text-align: center;
+    }
+
+    .salir {
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .rol {
+        font-size: 0.7em;
+        padding: 10px;
+    }
+
+    .adm a {
+        padding: 1px;
+    }
+
+    .mlat {
+        width: 100% !important;
+        min-height: auto;
+        height: auto;
+        order: 1;
+        justify-content: center;
+    }
+
+    .mlat ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .mlat ul li {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+
+    .mlat ul li h2 {
+        display: none;
+    }
+
+    .bienvenida {
+        order: 2;
+        height: auto;
+    }
+
+    .bienvenida img {
+        height: auto;
+        width: 100%;
+        order: 2;
+        position: relative;
+    }
+
+    .text-overlay {
+        order: 1;
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+
+    .text-overlay h1 {
+        width: 100%;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+
+    .table img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .mensaje {
+        font-size: 12px;
+    }
+
+    .header-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .mensaje {
+        font-size: 12px;
+    }
+
+    .header-text {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,7 @@
+FROM mysql:8.0  
+
+# Copiar el script SQL de inicialización
+COPY mysql-init/init.sql /docker-entrypoint-initdb.d/
+
+# Puerto expuesto (MySQL por defecto usa 3306)
+EXPOSE 3306

@@ -1,0 +1,341 @@
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+    .box-area{
+        margin: 0 10px;
+    }
+    .rounded-4{
+        height: max-content !important;
+    }
+    .img-fluid2{
+        display: none;
+    }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box{
+       padding: 20px;
+    }
+
+}
+
+.gestionUsuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), 
+              radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 20px 20px, 
+              linear-gradient(#23539E 1.6px, transparent 1.6px) 0 -0.8px, 
+              linear-gradient(90deg, #23539E 1.6px, #ffffff 1.6px) -0.8px 0;
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  height: 82vh;
+  border-radius: 30px;
+}
+
+.mainContainer_inform{
+  background-color: #ffffff;
+  opacity: 1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 94%;
+    height: 82vh;
+    border-radius: 30px;
+}
+
+/* Estilos para los informes */
+.informe-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.informe-header {
+  background-color: #23539e;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.informe-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.informe-card-header {
+  background-color: #23539e;
+  color: white;
+  border-radius: 10px 10px 0 0 !important;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.tab-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.nav-tabs.informe-tabs {
+  border-bottom: 2px solid #dee2e6;
+  margin-bottom: 1.5rem;
+}
+
+.nav-link.informe-tab {
+  color: #495057;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.nav-link.informe-tab:hover {
+  color: #23539e;
+  background-color: rgba(35, 83, 158, 0.1);
+}
+
+.nav-link.informe-tab.active {
+  color: #23539e;
+  background-color: white;
+  border-bottom: 3px solid #23539e;
+}
+
+.informe-label {
+  color: #23539e;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.informe-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+
+.informe-control:focus {
+  border-color: #23539e;
+  box-shadow: 0 0 0 0.2rem rgba(35, 83, 158, 0.25);
+}
+
+.btn-informe-primary {
+  background-color: #23539e;
+  border-color: #23539e;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-informe-primary:hover {
+  background-color: #1a3d7a;
+  border-color: #1a3d7a;
+}
+
+.informe-title {
+  color: #23539e;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #23539e;
+  padding-bottom: 0.5rem;
+}
+
+.admi_emple{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.botones1{
+    text-size-adjust: auto;
+    width: 200px !important;
+    height: 200px;
+    background-color: #003b9adf !important;
+    border-radius: 20px !important;
+    opacity: 200%;
+}
+
+.boton-atras-container {
+    position: absolute;
+    top: 85px; 
+    left: 250px; 
+    width: 80px;
+    cursor: pointer;
+}
+
+.fle_atras {
+    border: 2px solid black;
+    background-color: #23539E;
+    width: 80px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px){
+    .logos{
+        text-align: center;
+    }
+    .salir{
+        margin: 0;
+    }
+    .rol{
+        font-size: 0.7em;
+        padding: 10px;
+    }
+    .adm a{
+        padding: 1px;
+    }
+    .mlat{
+        width: 118vh !important;
+        min-height: auto;
+        height: 100%;
+        order: 1;
+        justify-content: center;
+    }
+    .mlat ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .mlat ul li{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    .mlat ul li h2{
+        display: none;
+    }
+    
+
+    .table img {
+        width: 80px; 
+        height: auto;
+      }     
+}
+
+.img-thumbnail {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 80%; 
+  object-fit: cover; 
+  display: block;
+  cursor: pointer;
+  margin-top: -50px;
+}
+  
+  .profile-section {
+    padding: 90px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 70%;
+    width: 90%;
+    background-color: #23539E;
+    margin-right: -40%;
+  }
+  
+  .profile-title {
+    color: #ffffff;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-image-container {
+    background: white;
+    padding: 2rem;
+    height: 85%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e9ecef;
+  }
+  
+  .camera-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #23539E;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .upload-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    background-color: #23539E;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+
+  /*INFORMES*/
+  .profile-section-info{
+    padding: 90px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 80%;
+    width: 90%;
+    background-color: #23539E;
+    margin-right: -40%;
+  }
+  
+  .upload-hint {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .img-thumbnail {
+    transition: all 0.3s ease;
+  }
+  
+  .img-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }

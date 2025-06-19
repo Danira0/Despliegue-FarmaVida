@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile.mysql
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: farmavida
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 123456789
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - farmavida-network  
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "8080:80"
+    networks:
+      - farmavida-network  
+
+  backend:
+    build:
+      context: ./BACKEND/SRC
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "4000:4000"
+    networks:
+      - farmavida-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+    env_file:
+      - ./BACKEND/SRC/.env
+
+  frontend:
+    build:
+      context: ./FRONTEND
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - farmavida-network
+    depends_on:
+      - backend
+
+networks:
+  farmavida-network:
+    driver: bridge
